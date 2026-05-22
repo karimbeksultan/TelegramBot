@@ -14,12 +14,11 @@ dp = Dispatcher()
 async def start(message: Message):
 
     kb = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="✅ Перейти по ссылке", url=REF_LINK)],
-        [InlineKeyboardButton(text="📌 Я перешёл", callback_data="done")]
+        [InlineKeyboardButton(text="✅ Перейти по ссылке", url=REF_LINK)]
     ])
 
     await message.answer(
-        "Перейди по ссылке и вернись 👇",
+        "Перейди по ссылке и получи доступ 👇",
         reply_markup=kb
     )
 
